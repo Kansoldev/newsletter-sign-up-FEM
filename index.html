@@ -12,32 +12,65 @@
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
+
   <body>
-    <!-- Sign-up form start -->
+    <main>
+      <section class="newsletter">
+        <picture class="newsletter__image">
+          <source
+            srcset="assets/images/illustration-sign-up-desktop.svg"
+            media="(min-width: 81.25em)"
+          />
 
-    Stay updated! Join 60,000+ product managers receiving monthly updates on:
-    Product discovery and building what matters Measuring to ensure updates are
-    a success And much more! Email address email@company.com Subscribe to
-    monthly newsletter
+          <img
+            src="assets/images/illustration-sign-up-mobile.svg"
+            class=""
+            alt=""
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+        </picture>
 
-    <!-- Sign-up form end -->
+        <div class="newsletter__content">
+          <h2>Stay updated!</h2>
 
-    <!-- Success message start -->
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
-    Thanks for subscribing! A confirmation email has been sent to
-    ash@loremcompany.com. Please open it and click the button inside to confirm
-    your subscription. Dismiss message
+          <ul class="newsletter__features">
+            <li class="feature__item">
+              Product discovery and building what matters
+            </li>
 
-    <!-- Success message end -->
+            <li class="feature__item">
+              Measuring to ensure updates are a success
+            </li>
+
+            <li class="feature__item">And much more!</li>
+          </ul>
+
+          <form action="" class="newsletter__form">
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="newsletter__input"
+              placeholder="email@company.com"
+            />
+
+            <button type="submit" class="subscribe__btn">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
