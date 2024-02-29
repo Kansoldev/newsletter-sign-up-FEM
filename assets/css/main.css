@@ -106,6 +106,7 @@ body {
 
 .newsletter__content {
   padding: 1.5625rem;
+  color: hsl(234, 29%, 20%);
 }
 
 @media (min-width: 81.25em) {
