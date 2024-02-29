@@ -154,6 +154,7 @@ body {
 }
 
 .newsletter__form {
+  position: relative;
   margin-top: 30px;
 }
 
