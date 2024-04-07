@@ -7,22 +7,25 @@ newsletterForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
   if (formInput.value === "") {
-    formInput.classList.add("newsletter__input--error");
     formError.innerHTML = "Email is required";
-    formError.style = "visibility: visible";
   }
 
   if (formInput.value.match(emailRegex) == null) {
-    formInput.classList.add("newsletter__input--error");
     formError.innerHTML = "Valid email required";
-    formError.style = "visibility: visible";
+  }
+
+  if (formInput.value === "" || formInput.value.match(emailRegex) === null) {
+    formInput.classList.add("newsletter__input--error");
+  }
+
+  if (!formInput.classList.contains("newsletter__input--error")) {
+    e.target.reset();
   }
 });
 
 formInput.addEventListener("input", (e) => {
   if (formInput.classList.contains("newsletter__input--error")) {
     formInput.classList.remove("newsletter__input--error");
-    formError.innerHTML = "Valid email required";
-    formError.style = "visibility: hidden";
+    formError.innerHTML = "";
   }
 });
