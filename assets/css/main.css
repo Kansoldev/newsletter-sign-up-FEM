@@ -208,6 +208,60 @@ body {
   width: 100%;
 }
 
+/* Subscription success */
+.subscription__success {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(234, 29%, 20%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 40px 20px;
+}
+
+.subscription__message {
+  margin-top: 40px;
+}
+
+@media (min-width: 1300px) {
+  .subscription__success {
+    width: 380px;
+    border-radius: 25px;
+    height: auto;
+    padding: 25px 40px 35px;
+  }
+
+  .subscription__message {
+    margin-top: 0;
+  }
+}
+
+.subscription__icon {
+  width: 40px;
+}
+
+.subscription__heading {
+  font-size: 2.375rem;
+  line-height: 1;
+  margin-block: 40px;
+}
+
+@media (min-width: 1300px) {
+  .subscription__heading {
+    margin-block: 20px;
+  }
+
+  .subscription__success button {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+}
+
+.subscription__email {
+  font-weight: 800;
+}
+
 /* Utility classes */
 .d-none {
   display: none;
