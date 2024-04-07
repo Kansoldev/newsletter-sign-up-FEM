@@ -89,6 +89,12 @@ body {
   background-color: hsl(255, 100%, 100%);
 }
 
+.newsletter__image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 @media (min-width: 81.25em) {
   .newsletter {
     display: flex;
@@ -176,6 +182,10 @@ body {
   border: 1px solid hsl(4, 100%, 67%);
 }
 
+.newsletter__input--error + .form-error {
+  visibility: visible;
+}
+
 .form-error {
   visibility: hidden;
   position: absolute;
@@ -196,4 +206,9 @@ body {
   font-weight: 700;
   padding: 13px 0;
   width: 100%;
+}
+
+/* Utility classes */
+.d-none {
+  display: none;
 }
