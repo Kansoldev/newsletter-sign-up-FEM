@@ -206,6 +206,17 @@ body {
   font-weight: 700;
   padding: 13px 0;
   width: 100%;
+  transition: background-image 0.2s ease-in-out;
+}
+
+.subscribe__btn:hover {
+  background-image: linear-gradient(
+    to right,
+    hsl(4, 100%, 62%),
+    hsl(4, 100%, 67%)
+  );
+  filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03))
+    drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
 }
 
 /* Subscription success */
